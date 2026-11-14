@@ -17,7 +17,7 @@ describe('About', () => {
     expect(section?.getAttribute('aria-labelledby')).toBe('about-title');
     expect(title?.textContent?.trim()).toBe('QUEM É O 9?');
     expect(section?.querySelectorAll('h1, h2, h3, h4, h5, h6').length).toBe(1);
-    expect(image?.getAttribute('src')).toBe('/imgs/imagemParaQuemÉo9.png');
+    expect(image?.getAttribute('src')).toBe('imgs/imagemParaQuemÉo9.png');
     expect(image?.getAttribute('alt')).toContain('Victor Kovalski');
     expect(image?.getAttribute('loading')).toBe('lazy');
     expect(image?.getAttribute('decoding')).toBe('async');

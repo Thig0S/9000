@@ -18,7 +18,7 @@ describe('History', () => {
     expect(section?.querySelector('[role="separator"]')?.getAttribute('aria-label')).toBe(
       'Separação entre Quem é o 9 e História do 9',
     );
-    expect(image?.getAttribute('src')).toBe('/imgs/imagemParaHistoriaDo9.png');
+    expect(image?.getAttribute('src')).toBe('imgs/imagemParaHistoriaDo9.png');
     expect(image?.getAttribute('alt')).toContain('Victor Kovalski');
     expect(image?.getAttribute('loading')).toBe('lazy');
     expect(image?.getAttribute('decoding')).toBe('async');

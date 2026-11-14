@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Permanent Marker';
-  src: url('/fonts/permanent-marker-latin-400.woff2') format('woff2');
+  src: url('../public/fonts/permanent-marker-latin-400.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Special Elite';
-  src: url('/fonts/special-elite-latin-400.woff2') format('woff2');
+  src: url('../public/fonts/special-elite-latin-400.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
