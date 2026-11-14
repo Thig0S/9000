@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { About } from './components/about/about';
 import { Hero } from './components/hero/hero';
+import { History } from './components/history/history';
 import { Navbar } from './components/navbar/navbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Navbar, Hero, About],
+  imports: [Navbar, Hero, About, History],
   templateUrl: './app.html',
   styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
