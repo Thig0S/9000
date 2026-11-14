@@ -1,11 +1,22 @@
 <header class="sticky top-0 z-50 border-b-4 border-brick bg-base">
   <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-5 py-2">
-    <a class="font-display text-5xl leading-none text-accent" href="#inicio" aria-label="9000 - voltar ao início">9</a>
+    <a
+      class="navbar-brand font-display leading-none text-accent"
+      href="#inicio"
+      aria-label="9000 - voltar ao início"
+      >9</a
+    >
     <nav class="navbar-links" aria-label="Navegação principal">
       @for (link of links; track link.id) {
-        <a class="navbar-link" [href]="'#' + link.id" [attr.aria-current]="activeId() === link.id ? 'location' : null">
+        <a
+          class="navbar-link"
+          [href]="'#' + link.id"
+          [attr.aria-current]="activeId() === link.id ? 'location' : null"
+        >
           <span>{{ link.label }}</span>
-          @if (activeId() === link.id) { <app-brush-underline variant="yellow" /> }
+          @if (activeId() === link.id) {
+            <app-brush-underline variant="yellow" />
+          }
         </a>
       }
     </nav>

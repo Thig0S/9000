@@ -15,13 +15,18 @@ export class Navbar implements OnInit, OnDestroy {
   private stopObserving: () => void = () => undefined;
   readonly links = [
     { id: 'inicio', label: 'Início' },
-    { id: 'quem-e-o-9', label: 'Quem é o 9' },
-    { id: 'historia-do-9', label: 'História do 9' },
+    { id: 'quem-e-o-9', label: 'Quem é 9' },
+    { id: 'historia-do-9', label: 'História 9' },
   ];
 
   ngOnInit(): void {
-    this.stopObserving = observeActiveSections(this.links.map(({ id }) => id), (id) => this.activeId.set(id));
+    this.stopObserving = observeActiveSections(
+      this.links.map(({ id }) => id),
+      (id) => this.activeId.set(id),
+    );
   }
 
-  ngOnDestroy(): void { this.stopObserving(); }
+  ngOnDestroy(): void {
+    this.stopObserving();
+  }
 }

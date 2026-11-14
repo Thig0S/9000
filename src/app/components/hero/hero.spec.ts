@@ -10,6 +10,6 @@ describe('Hero', () => {
     expect(root.querySelector('h1')?.textContent?.trim()).toBe('9000');
     expect(root.querySelector('p.max-w-\\[46ch\\]')?.textContent).toContain('Victor Kovalski transforma ideias em projetos');
     expect(root.querySelector('a[href="#quem-e-o-9"]')?.textContent).toContain('Quem é o 9');
-    expect(root.querySelector('img')?.getAttribute('alt')).toContain('Victor Kovalski');
+    expect(root.querySelector('.hero-photo-image')?.getAttribute('alt')).toContain('Victor Kovalski');
   });
 });
