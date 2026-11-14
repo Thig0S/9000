@@ -1,0 +1,3 @@
+:host { display: block; }
+.about-banner { width: 100%; height: clamp(240px, 40vw, 520px); object-fit: cover; object-position: 50% 100%; }
+app-brush-underline.about-underline { display: block; width: min(100%, 20rem); height: clamp(6px, .7vw, 10px); margin-inline: auto; }
