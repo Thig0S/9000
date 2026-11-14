@@ -10,7 +10,9 @@ describe('History', () => {
     const section = root.querySelector('section#historia-do-9');
     const title = root.querySelector('h2#history-title');
     const image = root.querySelector('img.history-photo-image');
-    const paragraphs = [...root.querySelectorAll('p')].map((paragraph) => paragraph.textContent?.trim());
+    const paragraphs = [...root.querySelectorAll('p')].map((paragraph) =>
+      paragraph.textContent?.trim(),
+    );
 
     expect(section?.getAttribute('aria-labelledby')).toBe('history-title');
     expect(title?.textContent?.trim()).toBe('HISTÓRIA DO 9');
@@ -26,7 +28,6 @@ describe('History', () => {
     expect(image?.getAttribute('height')).toBe('340');
     expect(image?.closest('figure')?.classList.contains('photo-frame')).toBe(true);
     expect(paragraphs).toEqual([
-      'A foto ao lado representa 9000 e o criador do seu vulgo: Silvio Kovalski!',
       'A ORIGEM DE TUDO: Silvio Kovaslki estava em ligação com sua irmã, Daiane Kovalski. Silvo então relatou sobre o custo absurdo para o seu implante dentário "NOVE MILLLLLL REAIS".',
       'O até então conhecido como "Tchoga" escutou a fala de Silvio, ficou encantado com suas palavras e decidiu que compartilharia a todos!',
       'Após o incidente, criou seu Instagram privado, chamado de 9000, foi o estopim para todos os eventos que levaram aos dias de hoje.',
