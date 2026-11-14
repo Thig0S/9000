@@ -11,7 +11,7 @@ seção prevista no projeto e quebrando a promessa de navegação da navbar.
 - Adicionar uma seção `#historia-do-9` na landing page, renderizada logo após a seção `#quem-e-o-9`.
 - Criar um componente Angular standalone `History` em `src/app/components/history/`, registrado em
   `App` e incluído no `<main>`.
-- Compor no desktop duas colunas: à esquerda, título `HISTÓRIA DO NOVE` com sublinhado vermelho de
+- Compor no desktop duas colunas: à esquerda, título `HISTÓRIA DO 9` com sublinhado vermelho de
   pincel e dois parágrafos; à direita, a fotografia `/imgs/imagemParaHistoriaDo9.png` em moldura
   creme. No mobile, empilhar título, texto e fotografia em coluna única.
 - Usar os textos exatos da referência visual aprovada, sem inventar fatos sobre a origem do apelido

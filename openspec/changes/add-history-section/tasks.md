@@ -6,7 +6,7 @@
       `ChangeDetectionStrategy.OnPush`, `templateUrl` e `styleUrl`, importando `BrushUnderline`;
       verificar que o componente compila isoladamente com `npx ng build` ao final do grupo.
 - [x] 1.2 Criar `history.html` com `<section id="historia-do-9" aria-labelledby="history-title">`,
-      `h2#history-title` com `HISTÓRIA DO NOVE`, `app-brush-underline variant="red"`, dois parágrafos
+      `h2#history-title` com `HISTÓRIA DO 9`, `app-brush-underline variant="red"`, dois parágrafos
       com os textos exatos da referência e `<strong>` apenas em `9000` e `Nove`; verificar que o
       texto renderizado corresponde exatamente ao conteúdo da spec.
 - [x] 1.3 Incluir no template a fotografia `/imgs/imagemParaHistoriaDo9.png` em `<figure>` emoldurada,

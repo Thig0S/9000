@@ -13,7 +13,7 @@ describe('History', () => {
     const paragraphs = [...root.querySelectorAll('p')].map((paragraph) => paragraph.textContent?.trim());
 
     expect(section?.getAttribute('aria-labelledby')).toBe('history-title');
-    expect(title?.textContent?.trim()).toBe('HISTÓRIA DO NOVE');
+    expect(title?.textContent?.trim()).toBe('HISTÓRIA DO 9');
     expect(section?.querySelectorAll('h1, h2, h3, h4, h5, h6').length).toBe(1);
     expect(image?.getAttribute('src')).toBe('/imgs/imagemParaHistoriaDo9.png');
     expect(image?.getAttribute('alt')).toContain('Victor Kovalski');

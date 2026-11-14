@@ -11,7 +11,7 @@ título com sublinhado de pincel, fotografia emoldurada e integração com a nav
 
 A página SHALL apresentar uma seção identificada por `historia-do-9`, rotulada pelo próprio título e
 posicionada após a seção `quem-e-o-9`, dentro do `<main>`. A seção SHALL conter um `h2` com o texto
-`HISTÓRIA DO NOVE`, mantendo o `h1` `9000` do hero como único título de nível 1.
+`HISTÓRIA DO 9`, mantendo o `h1` `9000` do hero como único título de nível 1.
 
 #### Scenario: Seção presente e rotulada
 
@@ -22,7 +22,7 @@ posicionada após a seção `quem-e-o-9`, dentro do `<main>`. A seção SHALL co
 #### Scenario: Hierarquia de títulos
 
 - **WHEN** os títulos do documento são inspecionados
-- **THEN** `9000` continua sendo o único `h1` e `HISTÓRIA DO NOVE` é um `h2` da seção
+- **THEN** `9000` continua sendo o único `h1` e `HISTÓRIA DO 9` é um `h2` da seção
 
 #### Scenario: Posição na página
 
@@ -49,7 +49,7 @@ manter espaçamento interno coerente com o restante da página.
 
 ### Requirement: Título com sublinhado vermelho à esquerda
 
-A seção SHALL exibir o título `HISTÓRIA DO NOVE` em caixa alta, na fonte display, cor creme e alinhado
+A seção SHALL exibir o título `HISTÓRIA DO 9` em caixa alta, na fonte display, cor creme e alinhado
 à esquerda, com tamanho entre aproximadamente 40 px e 75 px no desktop, acompanhado de um sublinhado
 vermelho `#d92e29` irregular, com espessura visual de 6 a 10 px, posicionado logo abaixo do texto e
 alinhado à esquerda.

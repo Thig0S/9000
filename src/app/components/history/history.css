@@ -28,5 +28,6 @@ app-brush-underline.history-underline {
 }
 
 @media (min-width: 1024px) {
-  .history-layout { grid-template-columns: 55% 45%; gap: 2rem; }
+  .history-layout { grid-template-columns: 55fr 45fr; gap: 2rem; padding-inline: 3.333%; }
+  .history-photo { margin-inline: auto 0; }
 }
