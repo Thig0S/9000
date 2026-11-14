@@ -1,0 +1,11 @@
+:host { display: block; }
+.navbar-links { display: flex; align-items: center; gap: clamp(1rem, 4vw, 3.5rem); }
+.navbar-link { position: relative; display: inline-flex; min-height: 44px; min-width: 24px; flex-direction: column; justify-content: center; color: var(--color-ink); font-size: clamp(.875rem, 1.5vw, 1.25rem); text-decoration: none; }
+.navbar-link:hover { color: var(--color-accent); }
+.navbar-link app-brush-underline { height: 6px; }
+@media (max-width: 767px) {
+  :host > header > div { justify-content: center; padding-block: .35rem; }
+  :host > header > div > a { margin: 0 auto .25rem; }
+  .navbar-links { width: 100%; justify-content: space-between; gap: .5rem; }
+  .navbar-link { min-height: 40px; font-size: .875rem; }
+}

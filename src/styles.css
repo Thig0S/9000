@@ -1,3 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Permanent Marker';
+  src: url('/fonts/permanent-marker-latin-400.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Special Elite';
+  src: url('/fonts/special-elite-latin-400.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@theme {
+  --color-base: #141311;
+  --color-base-alt: #1b1917;
+  --color-ink: #f3ead8;
+  --color-ink-dim: #c8beae;
+  --color-accent: #f5bb08;
+  --color-brick: #d92e29;
+  --color-frame: #eee4cf;
+  --color-line: #514a40;
+  --font-display: 'Permanent Marker', cursive;
+  --font-body: 'Special Elite', 'Courier New', monospace;
+}
+
+:root { --nav-h: 96px; color-scheme: dark; }
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  html, body { min-height: 100%; overflow-x: clip; }
+  body { margin: 0; background: var(--color-base); color: var(--color-ink); font-family: var(--font-body); }
+  img { display: block; max-width: 100%; }
+  :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+  ::selection { background: var(--color-accent); color: var(--color-base); }
+  :where(#inicio, #quem-e-o-9, #historia-do-9) { scroll-margin-top: calc(var(--nav-h) + 1rem); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .08;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");
+}
+
+main { position: relative; z-index: 1; }
+.photo-frame { border: 5px solid var(--color-frame); outline: 1px solid var(--color-frame); outline-offset: 5px; background: #0d0c0b; border-radius: 0; overflow: hidden; }
+
+@media (max-width: 767px) { :root { --nav-h: 126px; } }
