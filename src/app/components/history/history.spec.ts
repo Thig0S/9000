@@ -15,6 +15,9 @@ describe('History', () => {
     expect(section?.getAttribute('aria-labelledby')).toBe('history-title');
     expect(title?.textContent?.trim()).toBe('HISTÓRIA DO 9');
     expect(section?.querySelectorAll('h1, h2, h3, h4, h5, h6').length).toBe(1);
+    expect(section?.querySelector('[role="separator"]')?.getAttribute('aria-label')).toBe(
+      'Separação entre Quem é o 9 e História do 9',
+    );
     expect(image?.getAttribute('src')).toBe('/imgs/imagemParaHistoriaDo9.png');
     expect(image?.getAttribute('alt')).toContain('Victor Kovalski');
     expect(image?.getAttribute('loading')).toBe('lazy');
@@ -23,8 +26,10 @@ describe('History', () => {
     expect(image?.getAttribute('height')).toBe('340');
     expect(image?.closest('figure')?.classList.contains('photo-frame')).toBe(true);
     expect(paragraphs).toEqual([
-      'O nome 9000 (ou simplesmente Nove) surgiu de forma natural, entre amigos, e rapidamente se tornou parte da sua identidade. Tudo começou com uma brincadeira em um grupo, quando, em meio a várias ideias de apelido, alguém soltou “nove mil”. A piada pegou, e o que era apenas um comentário descontraído logo virou o seu vulgo.',
-      'Desde então, o 9000 acompanha Victor Kovalski em projetos, estudos e na sua jornada na área de tecnologia, representando mais do que um apelido: é uma marca da sua história, das amizades que construiu e de tudo que vem desenvolvendo ao longo do caminho.',
+      'A foto ao lado representa 9000 e o criador do seu vulgo: Silvio Kovalski!',
+      'A ORIGEM DE TUDO: Silvio Kovaslki estava em ligação com sua irmã, Daiane Kovalski. Silvo então relatou sobre o custo absurdo para o seu implante dentário "NOVE MILLLLLL REAIS".',
+      'O até então conhecido como "Tchoga" escutou a fala de Silvio, ficou encantado com suas palavras e decidiu que compartilharia a todos!',
+      'Após o incidente, criou seu Instagram privado, chamado de 9000, foi o estopim para todos os eventos que levaram aos dias de hoje.',
     ]);
   });
 });
